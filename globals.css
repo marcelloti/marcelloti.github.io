@@ -1,0 +1,108 @@
+p {
+    text-indent: 2em;
+}
+
+body{
+    font-family: "Arial";
+    background-color: #ffffff;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #fcfcfc 0, #fcfcfc 1px, #ffffff 0, #ffffff 50%);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+.main {
+    position: relative;
+    /*width: 150mm;*/
+    animation: fadeIn 0.2s;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 600px) {
+    .main {
+        display: block;
+    }
+    .submain{
+        padding: 1em;
+        width: 800px;
+    }
+}
+
+.divSkill {
+    padding-top: 2.5em;
+}
+
+.divCvSession {
+    animation: fadeIn 0.8s;
+    position: relative;
+    display: block;
+    padding-top: 2.5em;
+    color: #fff;
+    line-height: 1.8;
+    transition: all .3s ease-out;
+
+    max-width: 190mm;
+}
+
+.divCvSessionContent{
+    padding-left: 20px;
+}
+
+.sessionTitle {
+    color: #2079C7;
+    position: relative;
+    font-weight: bold;
+}
+
+.skillList {
+    color: #858585;
+    line-height: 1.8;
+    text-align: justify;
+    padding-right: 1.9em;
+    padding-left: 1.5em;
+    padding-top: 0.8em;
+}
+
+.subSessionItem {
+    color: #858585;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.skillSessionTitle{
+    color: #333;
+    display: block;
+}
+
+.skillTitle{
+    color: #333;
+    font-weight: bold;
+}
+
+.xpDescription {
+    
+}
+
+.skillsUsed{
+    display: none;
+    position: relative;
+    top: 16px;
+    line-height: 1.8;
+}
+
+.presentationOnly{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .presentationOnly{
+        display: none !important;
+    }
+}
